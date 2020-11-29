@@ -1,0 +1,39 @@
+
+-git --version
+
+    *** Visualizar versión de git instalado en el equipo ***
+
+-git init
+
+    *** Inicializar un sistema de versiones GIT ***
+
+-git add nombre_archivo
+
+    *** Agregar cambios que se hicieron en el proyecto especificando el archivo que quieres añadir los cambios que se hicieron. ***
+
+-git add .
+
+    *** Agregar todos los archivos donde se esta ubicado ***
+
+-git commit -m "Versión 1"
+
+    *** Commitear "guardar" localmente cambios que hayan sido agregados ***
+        - El comando " -m " nos ayuda a agregar una descripcion de los cambios que se van a comitear.
+
+-git status
+
+    *** Comando para visualizar el estado de los cambios que se han hecho ****
+        - Si hay cambios pero no han sido añadidos, se mostrarán normalmente en rojo ( Recordar se añaden con git add ).
+        - Si hay cambios que fueron añadidos, se mostrarán normalmente en verde.
+
+-git show
+
+    *** Mostrar los cambios historicos que se hayan hecho ***
+
+-git log nombre_archivo
+
+    *** Mostrar los cambios especificos de un archivo ***
+
+-git push
+
+    *** Subir los archivos comiteados localmente a un repositorio remoto ***

@@ -1,0 +1,40 @@
+
+---- WINDOWS ------
+
+    *** Se busca por el navegador la página de Git ***
+
+    Pagina Git:
+
+        - https://git-scm.com/
+
+        - Si se desea instalar ingresar a la opción titulada "Download"
+
+        Instalación :
+
+            -Seguir las instrucciones que se usa para la instalación en el caso que sea windows como cualquier otro programa que se instale.
+
+            Recomendación:
+
+                -Elegir las opciones recomendadas que te dan en el paso a paso.
+
+
+---- LINUX -------
+
+    *** Ingresar al command-line ***
+
+        - Si se tiene distribuciones derivabas de debian como ( Ubuntu ) verficar si se tiene el comando
+
+            -apt-get ( ingresarlo en el command-line )
+
+            -Instalar git a través del sistema operativo.
+
+                -Primero se debe actualizar la lista de paquetes de linux ( recordar tener permisos de Admin )
+
+                    -sudo apt-get update
+
+                    ( Sudo es para que tenga permisos de administrador nuestro comando )
+                
+                -Instalar git con el comando apt-get
+
+                    -apt-get install git
+                

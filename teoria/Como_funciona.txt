@@ -1,0 +1,1 @@
+*** Averiguar como es el funcionamiento de git ***

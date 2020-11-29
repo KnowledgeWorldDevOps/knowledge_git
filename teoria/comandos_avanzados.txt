@@ -1,0 +1,9 @@
+1.0 Escenario:
+
+    Si se desea quitarle el add a un archivo se realiza el siguiente comando.
+
+        -git rm --cached nombre_archivo
+
+            ( Esto provocará que el archivo se elimine del espacio en memoria ram del Git, localmente hablando esto traducido lo que realiza
+              es simplemente eliminar el add que se le realizo a dicho archivo, se puede visualizar en si le das nuevamente git status
+              este aparecerá de color rojo, demostrandonos que no esta añadido con add )
