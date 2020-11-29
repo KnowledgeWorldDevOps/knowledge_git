@@ -26,9 +26,9 @@
         - Si hay cambios pero no han sido añadidos, se mostrarán normalmente en rojo ( Recordar se añaden con git add ).
         - Si hay cambios que fueron añadidos, se mostrarán normalmente en verde.
 
--git show
+-git show nombre_archivo
 
-    *** Mostrar los cambios historicos que se hayan hecho ***
+    *** Mostrar los cambios historicos que se hayan hecho de un archivo<***
 
 -git log nombre_archivo
 
