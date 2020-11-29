@@ -1,0 +1,20 @@
+
+-git config
+
+    ** mostrará todas las configuraciones que tiene git.
+
+-git config --list --show-origin
+
+    ** mostrará donde esta ubicado el archivo de configuración de git.
+
+-git config --global user.name "Nombre de Git"
+
+    ** cambia la configuracion global del usuario git
+
+-git config --global user.email "emaildegit@git.com"
+
+    ** cambia la configuración global del email del usuario git
+
+-git config --list
+
+    ** visualizar configuraciones
