@@ -143,3 +143,34 @@
         Después los incluidos ( añadidos ) los cambios faltantes puedes añadirlo al commit anterior con el comando:
 
             -git commit --amend
+
+11.0 Escenario:
+
+    Reconstruir situaciones horribles de casos emergencia, SOLO CASO EMERGENCIA CUANDO ALGO SE ROMPIO
+
+        -git reflog ( con git reflog se visualiza todo lo que haya ocurrido, y muestra cuales son los heads que han muerto en el tiempo )
+
+        Copias el head donde necesitas volver, donde todo era correcto.
+
+            Ej: Copiar un de ejemplo, como HEAD@{4}
+
+            Para resetear al momento donde todo era correcto
+
+                -git reset --HARD HEAD@{4} ( Esto hará volver todo al head donde elegiste volver, RECUERDA DEVOLVERÁ TODO EXACTAMENTE TODO)
+
+                ATENCION: Este comando es peligroso, recuerda que esto reseteará la historia de commits hasta donde elijas volver.
+
+12.0 Escenario:
+
+    Buscar palabras:
+
+    En el proyecto:
+
+        -git grep -n palabra_a_buscar
+            ** te encontrará los archivos donde fueron usadas la que escribiste
+        -git grep -c palabra_a_buscar
+            ** te mostrará cuantas veces se ha usado esa palabra dentro de todo el proyecto
+    
+    En los commits:
+
+        -git log -S palabra_a_buscar
