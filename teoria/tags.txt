@@ -4,6 +4,8 @@
     en pocas palabras puedes decir que desde cierto commit era tu version 0.1 del proyecto, y así ir nombrando a través
     de la historia de commits, las versiones que quieras ponerle con los tags
 
+    Esto se usa en más enfoque para determinar cuando el producto esta listo en cierto punto, especficiando una cierta versión.
+
 ///
 
 
@@ -19,3 +21,21 @@ Revisar lista de todos los tags:
     Para revisar especificamente a que Commit y a que referencia esta el tag se hace con el comando:
 
         -git show-ref --tags
+
+Subir tags al repositorio remoto:
+
+    -git push origin --tags
+
+Eliminar tags:
+
+    // Esto lo eliminará en el repositorio local
+    -git tag -d nombre_tag
+
+    // Para eliminarlo en el repositorio remoto se usa pero recuerda primero borrarlo localmente:
+    -git push origin :refs/tags/nombre_tag_a_borrar
+
+////
+
+    Importante, siempre subir al repositorio despues de crear el tag para poder visualizarse en el repositorio remoto, en este caso github
+    -git push origin --tags
+////
