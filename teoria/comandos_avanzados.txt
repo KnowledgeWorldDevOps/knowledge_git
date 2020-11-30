@@ -8,3 +8,83 @@
               es simplemente eliminar el add que se le realizo a dicho archivo, se puede visualizar en si le das nuevamente git status
               este aparecerá de color rojo, demostrandonos que no esta añadido con add )
 
+2.0 Escenario:
+
+    Si se desea visualizar diferencias de un archivo que aún no está añadido con add para ver que se agrego.
+
+    -git diff nombre_archivo
+
+    Si se desea ver las diferencias entre un cambio y otro cambio del archivo se usa el siguiente comando.
+
+        -Visualizar los commits que tiene el proyecto.
+
+            -git log
+        
+        -Se debe obtener el ID del commit, el cual esta al lado de la palabra commit APARECERA_ESCRITO_EL_ID
+
+        -Visualizar diferencias:
+
+            -git diff ID_COMMIT_PRIMERO_A_COMPARAR ID_SEGUNO_COMMIT_PARA_COMPARAR_VS_PRIMERO
+
+                Ej:
+                    ( En este ejemplo se mostrarán las diferencias entre estos dos commits. )
+
+                    -git diff a7be75cf32b55e8261a1e96b798ca481928c8761 9d2db828cd800fa41fa8ad27d211ea2482e09bba
+
+
+3.0 Escenario:
+
+    Volver en el tiempo de forma agresiva.
+
+    1 Forma:
+
+        -git reset
+
+            -Nos permite volver a una version ( Commit ) anterior
+
+            Existen dos reset, el duro y el suave.
+
+            -git reset --hard ( Esto provocará que todo vuelva a la versión "Commit" que se elija, este caso es cuando se quiera volver a la versión anterior si
+                                o si)
+
+            -git reset --soft ( Esto provocará que volvamos a la versión anterior pero lo que este con git add seguirá ahí )
+    
+    2 Forma:
+
+            Visualizar como era un determinado archivo en cierto commit 
+
+            -git checkout ID_COMMIT nombre_archivo
+
+4.0 Escenario:
+
+    Eiminar los archivos del Staging ( osea los archivos que se les hizo el add pero no tiene commit aún si no solo add )
+
+        - git reset HEAD
+
+            * De esta manera si le damos git status, ya no se verán verdes pues ya salieron del add, si no que se verán rojos como si no se les hubiera
+              hecho add *
+
+5.0 Escenario:
+
+    Visualizar cambios en los commit de manera especificos en los archivos.
+
+        -git log --stat
+        
+        Visualizar como era un determinado archivo en cierto commit 
+
+            -git checkout ID_COMMIT nombre_archivo
+
+                Ej:
+                    -git diff a7be75cf32b55e8261a1e96b798ca481928c8761 archivo_ejemplo.txt
+
+                    ( Esto devolverá al tiempo del archivo donde esta ubicado ese commit)
+
+                    * Si quieres volver a su estado original debes dar *
+
+                    -git checkout master nombre_archivo
+
+6.0 Escenario:
+
+    Guardar el log en un archivo txt
+
+        -git log > log.txt ( Esto creará un archivo txt con el log de git)
