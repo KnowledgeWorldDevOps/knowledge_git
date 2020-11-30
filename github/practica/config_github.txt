@@ -2,18 +2,41 @@
 
 Configuración SSH
 
+    Comando para crear una llave privada
+        
+        - ssh-keygen -t rsa -b 4096 -C "Correo_relacionado_para_la_SSH"
 
+    - En windows o Linux se necesita revisar que el proceso de SSH si se este corriendo, esto se hace con el siguiente comando:
+
+        - eval $(ssh-agent -s)
+
+    - Después de verificado se debe agregar la llave que se creo, se agrega al sistema.
+
+        -ssh-add RUTA_DONDE_ESTA_LA_LLAVE ( Nota: se agrega la llave priva LA QUE NUNCA SE DEBE MOSTRAR )
+
+            Ej Linux:
+
+                -ssh-add ~/.ssh/id_rsa ( Recordar no es la pública, si no, solamente la privada. )
 
 ---------------------------------------------------------------
 
 *** Agregar un origen remoto ***
 
         -git remote add  origin DIRECCION_URL_DEL_REPOSITORIO
+        
+        NOTA:
+            -origin solo es una variable, se puede poner cualquier otra cosa, pero como estandar se pone origin. de esta forma nos referiremos a nuestro repositorio
+             remoto que tenga añadido en mi git con remote y el nombre de la variable por eso se hace " git push origin rama" ese origin se refiere al contenido
+             de la variable remota que creamos que contiene la url del proyecto.
 
     *** Visualizar el origin de git ***
 
         -git remote -v 
 
+    *** Si se desea cambiar una url remota ****
+
+        -git remote set-url origin URL_DEL_REPOSITORIO
+    
     -- Recordar:
 
         - Hacer pull origin rama_principal ( Esto para bajar posibles archivos que esten ya existentes del proyecto )

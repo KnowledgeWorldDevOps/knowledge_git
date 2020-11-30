@@ -1,0 +1,21 @@
+///
+
+    Los tags son una forma de identificar cierto tiempo en la línea de vida de tu proyecto y establecer una versión
+    en pocas palabras puedes decir que desde cierto commit era tu version 0.1 del proyecto, y así ir nombrando a través
+    de la historia de commits, las versiones que quieras ponerle con los tags
+
+///
+
+
+Comando para añadir tag:
+
+    -git tag -a nombre_version -m "Resultado de las primeras clases del curso" ID_DEL_COMMIT 
+        ( Recuerda el id se puede ver con git log, la cadena al lado de commit es el ID)
+
+Revisar lista de todos los tags:
+
+    -git tag
+
+    Para revisar especificamente a que Commit y a que referencia esta el tag se hace con el comando:
+
+        -git show-ref --tags
