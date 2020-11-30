@@ -57,7 +57,7 @@
 
     *** Comando para clonar un proyecto de un repositorio remoto, esto te clonará un proyecto remoto a tu espacio local ***
 
--git push
+-git push origin rama
 
     *** Se suben los commits locales al repositorio remoto ***
 
