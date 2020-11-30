@@ -109,3 +109,37 @@
 
         Nota: Arreglar / Solucionar conflictos es algo normal, se basa en una comunicación de equipo para decidir que cambios se deben hacer para Solucionar
               el conflicto, así entenderás que trato de hacer el otro desarrollador en esas líneas de código.
+
+9.0 Escenario:
+
+    Bugs:
+
+        Como buena práctica se debería crear una nueva rama, normalmente la nomenclatura de este tipo de soluciones se entiende como hotfix
+
+            (se crea la rama)
+                
+                -git branch hotfix-bugTypo (ejemplo nombre)
+                
+                -git checkout hotfix-bugTypo
+
+                // se corrige el bug, se agrega y se comitea en el repositorio local. Esto en la rama del hotfix
+
+                ( Se sube al origin repositorio remoto )
+
+                -git push origin hotfix-bugTypo
+
+                Desde github se utiliza las opciones de Pull request. En este caso se hace entr la rama hotfix-bugTypo y master.
+                Nota: Desde las opciones gráficas de github en este caso, permite asignar quien puede revisarlo eligiendolo con Reviewers.
+
+                    - Los Reviewers pueden declinar el pull request pidiendo cambios etc. Esto es una buena práctica para que todo este de manera
+                      óptima.
+
+10.0 Escenario:
+
+    Reconstruir un commit ( añadir algo que se te olvido al commit que hiciste )
+
+        -Haces los cambios despues del commit que acabas de hacer, los guardas ( añades con git add )
+
+        Después los incluidos ( añadidos ) los cambios faltantes puedes añadirlo al commit anterior con el comando:
+
+            -git commit --amend

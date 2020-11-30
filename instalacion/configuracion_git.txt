@@ -18,3 +18,7 @@
 -git config --list
 
     ** visualizar configuraciones
+
+-git remote add Nombre_variable_referirse_repositorio URL_REPOSITORIO
+
+    ** Sirve para añadir otra nueva variable remote con un repositorio diferente

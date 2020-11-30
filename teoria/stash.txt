@@ -1,0 +1,3 @@
+Averiguar bien stash
+
+- Comando util para guardar temporalmente cambios realizados, que no han sido añadidos ni comiteados.
