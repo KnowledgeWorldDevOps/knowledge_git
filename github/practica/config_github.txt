@@ -1,0 +1,22 @@
+
+---------------------------------------------------------------
+
+*** Agregar un origen remoto ***
+
+        -git remote add  origin DIRECCION_URL_DEL_REPOSITORIO
+
+    *** Visualizar el origin de git ***
+
+        -git remote -v 
+
+    -- Recordar:
+
+        - Hacer pull origin rama_principal ( Esto para bajar posibles archivos que esten ya existentes del proyecto )
+        
+        - En el caso que te aparezca el error fatal: refusin to merge unrelated histories 
+        
+            Esta significa que la historia ( commits ) del repositorio es algo distinto al repositorio local que tienes ( tu grupo de commits )
+            se puede forzar con el comando :
+
+                -git pull origin master --allow-unrelated-histories
+---------------------------------------------------------------

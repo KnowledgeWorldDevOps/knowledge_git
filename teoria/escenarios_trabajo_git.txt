@@ -1,6 +1,6 @@
 1.0 Escenario:
 
-    Si se desea quitarle el add a un archivo se realiza el siguiente comando.
+    Si se desea quitarle el add a un archivo en especifico se realiza el siguiente comando.
 
         -git rm --cached nombre_archivo
 
@@ -14,7 +14,7 @@
 
     -git diff nombre_archivo
 
-    Si se desea ver las diferencias entre un cambio y otro cambio del archivo se usa el siguiente comando.
+    Si se desea ver las diferencias entre un commit y otro commit del archivo se usa el siguiente comando.
 
         -Visualizar los commits que tiene el proyecto.
 
@@ -88,3 +88,24 @@
     Guardar el log en un archivo txt
 
         -git log > log.txt ( Esto creará un archivo txt con el log de git)
+
+7.0 Escenario:
+
+    Mezclar ramas.
+
+        Se elige la rama principal a la cual se le añadirá el último commit de la otra rama que se fusionará
+
+        -git merge nombre_rama
+
+        Nota: si los dos desarrolladores modificaron la misma líne esto podría generar conflictos, si no es el caso git hará auto-mergening y fusionará
+              las ramas
+
+8.0 Escenario:
+
+    conflictos:
+
+        No tengas miedo. Si aparece conflictos al hacer merge, revisa los archivos que presentan conflicto y decide si aceptar los cambios que vienen
+        o aceptar tus cambios del HEADA ( Rama donde estás parado ).
+
+        Nota: Arreglar / Solucionar conflictos es algo normal, se basa en una comunicación de equipo para decidir que cambios se deben hacer para Solucionar
+              el conflicto, así entenderás que trato de hacer el otro desarrollador en esas líneas de código.
