@@ -47,4 +47,9 @@ Configuración SSH
             se puede forzar con el comando :
 
                 -git pull origin master --allow-unrelated-histories
----------------------------------------------------------------
+
+--------------------------------------------------------------
+
+*** Clonar proyecto ***
+
+    -git clone URL_PROYECTO_GITHUB
